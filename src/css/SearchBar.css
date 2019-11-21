@@ -1,0 +1,51 @@
+.search-container {
+    display: inline;  
+    float: left; 
+    margin-left: 10px; 
+    margin: 0px; 
+   
+  }
+
+  
+.searchImg {
+    height: 33px;
+    margin-bottom: -13.5px; 
+    margin-top: 8px; 
+    width: 30px; 
+   top: 30%; 
+  }   
+  
+   
+  .search-container input[type=text] { 
+    padding: 12.5px;
+  
+    font-size: 17px;
+    border-top-left-radius: 10px; 
+    border-bottom-left-radius: 10px; 
+    border: none;
+    border: 1px solid lightgray;  
+
+  }
+  
+  .search-container button {
+    border-top-right-radius: 10px; 
+    border-bottom-right-radius: 10px;   
+  
+    padding-bottom: 15px; 
+    background: #ddd;
+    border: none; 
+    cursor: pointer;
+  }
+  
+ .search-container button:hover {
+    background: #ccc;
+  }
+  
+  @media screen and (max-width: 330px) {
+     
+  .search-container input[type=text] { 
+    width: 60%;
+
+  }
+  
+  }   

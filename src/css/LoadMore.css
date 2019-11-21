@@ -1,0 +1,21 @@
+.button4 {
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+  }
+  .button {
+    background-color:  #333333    ; 
+    border: none;
+    color: white;
+    padding: 20px 35px;
+    border-radius: 10px; 
+  
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0 auto; 
+    margin-bottom: 13px;
+    cursor: pointer; 
+    display: block;
+  } 
+   
+  .button4:hover {opacity: 0.8};

@@ -1,0 +1,175 @@
+ .row .column em {
+   font-size: 13px;
+ }
+
+ .row .column p {
+   text-align: center;
+   font-size: 14px;
+   color: black;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+ }
+
+ .row .column h4 {
+   margin: 6px 0 6px 0px;
+   padding: 0px;
+   font-size: 14px;
+ }
+
+ a {
+   text-decoration: none !important;
+ }
+
+
+ .row .column h3 {
+   margin-bottom: 2px;
+ }
+
+ .row .column button {
+   background-color: lightgreen;
+   color: white;
+   font-size: auto;
+   border: none;
+   cursor: pointer;
+   border-radius: 5px;
+   text-align: left;
+   width: auto;
+ }
+
+ .row .column button:hover {
+   background-color: black;
+ }
+
+ .row {
+   display: -ms-flexbox;
+   /* IE10 */
+   display: flex;
+   -ms-flex-wrap: wrap;
+   /* IE10 */
+   flex-wrap: wrap;
+
+   padding: 15px;
+   /*justify-content: center; */
+  
+
+
+ }
+
+ /* Den sidste row */
+ .row::after {
+   content: " ";
+   flex: auto;
+
+ }
+ .column {
+
+   flex: 0 0 19.2%;
+   margin: 2px;
+   margin-bottom: 12px;
+   border: 1px solid rgba(0, 0, 0, 0.2);
+   border-radius: 10px;
+   box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.294);
+   padding-top: px;
+   display: inline-block;
+   position:relative;
+
+ }
+
+
+
+
+ .column .dogPic { 
+
+   vertical-align: middle;
+   width: 100%;
+   height: 12vw;
+   border-radius: 6px;
+ }
+
+ /* Dialog & image bruges til popup */
+ .dialog {
+   z-index: 2;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0,0,0,0.8);
+   
+ }
+
+ .dialog img {
+  display: block;
+  margin: auto;
+  height: 60vh;
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+  border-radius: 10px;
+  animation: zoominoutsinglefeatured 0.8s forwards; 
+} 
+
+@keyframes zoominoutsinglefeatured {
+  0% {
+      transform: scale(1,1);
+  }
+  50% {
+      transform: scale(1.2,1.2);
+  }
+  100% {
+      transform: scale(1,1);
+  }
+}
+
+.row .column .favorite {
+  background-position: center;
+  background-color: transparent;
+  background-image: url(../img/heart-regular.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 0;
+  bottom: 11px;
+  color: red;
+  display: block;
+  height: 24px;
+  overflow: hidden;
+  position: absolute;
+  right: 16px;
+  text-indent: -9999px;
+  width: 24px;
+  z-index: 1;
+  outline: none;
+}
+.row .column .favorite:hover, .row .column .favorite.isfavorite{
+border: 0;
+background-color: transparent;
+background-image: url(../img/heart-solid.svg);
+
+}
+
+
+
+
+
+ @media screen and (max-width: 800px) {
+   .column {
+     -ms-flex: 47%;
+     flex: 47%;
+     max-width: 49%;
+
+   }
+
+   .column .dogPic {
+     height: 27vw;
+   }
+ }
+
+ @media screen and (max-width: 600px) {
+   .column {
+     -ms-flex: 100%;
+     flex: 100%;
+     max-width: 100%;
+   }
+
+   .column .dogPic {
+     height: 60vw;
+   }
+ }
